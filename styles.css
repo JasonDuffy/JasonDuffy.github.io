@@ -1,0 +1,127 @@
+:root{
+    /* Color Variables */
+    --color-back: #17202a;
+    --color-main: #122338;
+    --color-imageDiv: #182f4b;
+    --color-textDiv: #0d1927;
+    --color-text: #E7ECEF;
+    --color-projectHeading: #203f63;
+
+    --color-link: #356397;
+    --color-linkHover: #5093e0;
+    --color-linkClicked: #213d5d;
+
+    /* Different Colors for Header and Footer (Unused) */
+    --color-header: var(--color-back);
+    --color-footer: var(--color-back);
+
+    /* Ratio of the image and the text of each project. Sum must equal 100%! */
+    --imageRatio: 60%;
+    --textRatio: 40%;
+
+    /* Font stuff */
+    color: var(--color-text);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2vmin;
+}
+body{
+    margin-top: 0;
+    width: 81vw;
+    padding-left: 9vw;
+    background-color: var(--color-back);
+}
+header{
+    background-color: var(--color-header);
+    height: 3vmin;
+    width: 81vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 2vmin;
+    flex-direction: column nowrap;
+}
+header a{ /* Links in header */
+    margin-top: 0.3vmin;
+}
+main{
+    padding-top: 1vh;
+    background-color: var(--color-main);
+}
+footer{
+    background-color: var(--color-footer);
+    height: 3vh;
+    border-top: 2px solid var(--color-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vmin;
+} /* Each project consists of an image div and a text div */
+.project{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 40vh;
+}
+.projectImageDiv{ /* Holds the image of a single project */
+    background-color: var(--color-imageDiv);
+    width: var(--imageRatio);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.projectImage{ /* The image of a project */
+    max-height: 98%;
+    max-width: 98%;
+    object-fit: contain;
+}
+.projectText{ /* Div that contains the text of a project */
+    width: calc(var(--textRatio) - 2vh);
+    height: 100%;
+    background-color: var(--color-textDiv);
+    align-items: center;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 2.15vmin;
+}
+h1{
+    font-size: 4.5vmin;
+    margin: 0;
+    margin-top: 2.5vh;
+    margin-bottom: -1vh;
+}
+#mainHeading{ /* Div of the main heading (currently "Portfolio") */
+        padding-left: 0.3vw;
+}
+h2 {
+    font-size: 4vmin;
+    margin: 0;
+    margin-top: 1vh;
+    margin-bottom: -0.5vh;
+    padding-top: 0.5vh;
+} /* The name of the project as a heading */
+.projectHeader{
+    margin: 0;
+    height: 3vmin;
+    padding-left: 0.5vw;
+    padding-bottom: 0.5vw;
+    background: linear-gradient(90deg, var(--color-imageDiv) var(--imageRatio), var(--color-textDiv) var(--imageRatio));
+    font-size: 3vmin;
+    border-top: 2px solid var(--color-back);
+}
+.headings{ /* The category headings (like "Study Projects") */
+    height: 10vmin;
+    background-color: var(--color-projectHeading);
+    padding-left: 0.5%;
+}
+
+/* Links */
+a:link{
+    color: var(--color-link);
+}
+a:visited{
+    color: var(--color-linkClicked);
+}
+a:hover{
+    color: var(--color-linkHover)
+}
