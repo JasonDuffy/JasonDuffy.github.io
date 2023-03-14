@@ -11,9 +11,9 @@
     --color-linkHover: #5093e0;
     --color-linkClicked: #213d5d;
 
-    /* Different Colors for Header and Footer (Unused) */
+    /* Different Colors for Header and Footer */
     --color-header: var(--color-back);
-    --color-footer: var(--color-back);
+    --color-footer: var(--color-main);
 
     /* Ratio of the image and the text of each project. Sum must equal 100%! */
     --imageRatio: 60%;
@@ -56,6 +56,7 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 2vmin;
+    margin-bottom: -100px; /* Gets rid of the margin at the bottom of the page */
 } /* Each project consists of an image div and a text div */
 .project{
     display: flex;
