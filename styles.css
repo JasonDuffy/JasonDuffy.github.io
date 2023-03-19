@@ -7,9 +7,9 @@
     --color-text: #E7ECEF;
     --color-projectHeading: #203f63;
 
-    --color-link: #356397;
-    --color-linkHover: #5093e0;
-    --color-linkClicked: #213d5d;
+    --color-link: #4886cc;
+    --color-linkHover: #5aa3f5;
+    --color-linkClicked: #37659a;
 
     /* Different Colors for Header and Footer */
     --color-header: var(--color-back);
@@ -54,8 +54,9 @@ footer{
     border-top: 2px solid var(--color-main);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 2vmin;
+    padding-bottom: 0.4vh;
     margin-bottom: -100px; /* Gets rid of the margin at the bottom of the page */
 } /* Each project consists of an image div and a text div */
 .project{
@@ -90,14 +91,14 @@ footer{
     margin-bottom: 2.5vmin;
 }
 h1{
-    font-size: 4.5vmin;
+    font-size: 5vmin;
     margin: 0;
     margin-top: 2.5vh;
-    margin-bottom: -1vh;
+    margin-bottom: -0.5vh;
 }
 #mainHeading{ /* Div of the main heading (currently "Portfolio") */
-        padding-left: 0.3vw;
-        height: 9vmin;
+        padding-left: 0.5%;
+        height: 10vmin;
 }
 h2 {
     font-size: 4vmin;
@@ -105,7 +106,14 @@ h2 {
     margin-top: 1vh;
     margin-bottom: -0.5vh;
     padding-top: 0.5vh;
-} /* The name of the project as a heading */
+} 
+.headings {
+    /* The category headings (like "Study Projects") */
+    height: 10vmin;
+    background-color: var(--color-projectHeading);
+    padding-left: 0.5%;
+}
+/* The name of the project as a heading */
 .projectHeader{
     margin: 0;
     height: 3vmin;
@@ -114,11 +122,6 @@ h2 {
     background: linear-gradient(90deg, var(--color-imageDiv) var(--imageRatio), var(--color-textDiv) var(--imageRatio));
     font-size: 3vmin;
     border-top: 2px solid var(--color-back);
-}
-.headings{ /* The category headings (like "Study Projects") */
-    height: 10vmin;
-    background-color: var(--color-projectHeading);
-    padding-left: 0.5%;
 }
 
 /* Links */
